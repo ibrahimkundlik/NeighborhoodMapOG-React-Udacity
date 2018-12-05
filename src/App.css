@@ -1,0 +1,179 @@
+.App {
+  text-align: center;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+html, body, h1, h3 {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+/* CSS Added */
+/* NAV bar */
+
+.main-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: #02b3e4;
+  padding: 0;
+  margin: 0;
+}
+nav .menu-icon {
+  height: 50px;
+  float: left;
+}
+nav .title {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.menu-icon {
+  width: 5%;
+  background-color: #02b3e4;
+}
+.menu-icon a {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  color: black;
+  font-size: 29px;
+}
+h1 {
+  padding: 5px 0 0 10px;
+  font-size: 29px;
+}
+/* Main Section */
+
+#map {
+  position: absolute;
+  height: 92vh;
+  width: 100%;
+}
+#search {
+  position: absolute;
+  left: 0;
+  width: 25%;
+  height: 93vh;
+  margin: 0;
+  padding: 0;
+  display: block;
+  background-color: #7d97ad;
+  z-index: 1;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* Search Container */
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+  padding: 10px;
+}
+.search-input {
+  text-align: center;
+}
+input[type=text] {
+  padding: 6px;
+  margin: 5px;
+  width: 70%;
+}
+div.location-list {
+  height: 87%;
+  overflow-y: scroll;
+}
+li {
+  max-width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 2px solid black;
+}
+/* Info Window */
+
+.info-wrap {
+  width: 200px;
+  height: 160px;
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.info-name, .info-position, .info-address {
+  padding: 0;
+  margin: 0;
+}
+/* Media Queries */
+/* For devices with screen width below 550px*/
+@media screen and (max-width: 550px) {
+  h1 {
+    padding: 5px 0 0 20px;
+    font-size: 20px;
+  }
+  .menu-icon a {
+    font-size: 20px;
+  }
+  #search {
+    width: 60%;
+    height: 350px;
+    z-index: 0;
+  }
+  div.location-list {
+    height: 260px;
+  }
+  li {
+    height: 30px;
+    font-size: 15px;
+  }
+  .info-wrap {
+    width: 100px;
+    height: 160px;
+  }
+  .info-name, .info-position, .info-address {
+    font-size: 10px;
+  }
+}
+
+/* For devices with screen width between 551px and 800px*/
+@media screen and (min-width: 551px) and (max-width: 800px) {
+  li {
+    height: 40px;
+    font-size: 16px;
+  }
+  #search {
+    width: 35%;
+  }
+}
