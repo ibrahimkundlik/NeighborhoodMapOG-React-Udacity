@@ -13,7 +13,7 @@ The project uses [Node.js](https://nodejs.org/en/) and the [Create-React-App sta
 After Node is installed in your system, follow the below steps.
 
 1. Navigate to the directory where you want to store the app.
-2. Clone the repo `https://github.com/ibrahimkundlik/NeighborhoodMapReact.git`
+2. Clone the repo `https://github.com/ibrahimkundlik/NeighborhoodMapOG-React-Udacity.git`
 3. Now install all modules listed as dependencies in `package.json` by running the command `npm install`
 4. Launch the app with this command `npm start`
 
